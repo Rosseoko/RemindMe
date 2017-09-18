@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="css/bootstrap-social.css">
     <link href="css/styles.css" rel="stylesheet">
     <!-- endbuild -->
+    
 
-    <title>Remind Me: Contact Us</title>
-
+    <title>Remind Me</title>
 </head>
 
 <body>
+
        <nav class="navbar navbar-light navbar-toggleable-sm">
 
         <div class="container ">
@@ -30,13 +31,12 @@
                 </button>
             <a class="navbar-brand" href="./index.html"><img src="img/logo.png" height="30" width="41" class="img-logo"></a>
 
-            <div class="collapse navbar-collapse " id="Navbar">
+             <div class="collapse navbar-collapse " id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.html#about">About</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="./contactus.html">Contact</a></li>
                 </ul>
-               
+                <span class="navbar-text">
+                    <span class="fa fa-sign-in"></span> Welcome User
+                </span>
             </div>
         </div>
     </nav>
@@ -44,63 +44,75 @@
 
     <div class="container">
         <div class="row">
-            <ol class="col-12 breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active">Contact Us</li>
-            </ol>
-            <div class="col-12">
-               <h3>Contact Us</h3>
+
+            <div class="col-sm-12">
+            
+
+                    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reminders <span class="badge badge-danger"> 4 </span> </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Profile
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">View Profile</a>
+                            <a class="dropdown-item" href="#"> Log Out</a>
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                    </nav>
+
+
+
+
                <hr>
             </div>
         </div>
-
-
+        
         <div class="row row-content">
-           <div class="col-12">
-           </div>
-            <div class="col-12 col-md-9">     
-                   <form>
-                    <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label"></label>
-                           <div class="col-md-10">
-                             <div class="input-group">
-                                    <div class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                                </div>
-                        </div>
-
-                    </div>
-                    <div class="form-group row">
-                        <label for="emailid" class="col-md-2 col-form-label"></label>
-                        <div class="col-md-10">
-                             <div class="input-group">
-                                    <div class="input-group-addon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-                                    <input type="text" class="form-control" id="email" name="email" placeholder="Email">
-                                </div>
-                        </div>
-
-
-                    </div>
-                    <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label"></label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" id="feedback" name="feedback" rows="12" placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </div>
-                </form>
+            <div class="col-sm-6">
+              <img class="d-flex mr-3" href="#" src="img/calendar.png" alt="Click">
             </div>
-             <div class="col-12 col-md">
+
+            <div class="col-12 col-sm-6">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Last Items</h3>
+                    <div class="card-block scroll">
+                       <img src="img/voicenotes.png">
+                       <img src="img/voicenotes.png">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                 <img class="d-flex mr-3" href="#" src="img/micro.png" alt="Click">
+                </div>
+
+                <div class="d-flex justify-content-center">
+                 <h4>New Reminder</h4>
+                </div>
+
             </div>
-       </div>
+
+        </div>
+
+               
 
     </div>
-
-     <footer class="footer">
+   <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm align-self-center">
@@ -124,14 +136,13 @@
     </footer>
 
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild --> 
-
 
 </body>
 

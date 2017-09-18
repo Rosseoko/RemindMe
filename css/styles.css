@@ -9,15 +9,19 @@
   min-height: 400px; }
 
 .footer {
-  background-color: #D1C4E9;
+  background-color: #424242;
   margin: 0px auto;
   padding: 20px 0px; }
 
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
-  background: #9575CD;
-  color: floralwhite; }
+  background: #2ECCFA;
+  color: floralwhite; 
+  background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+
+}
 
 address {
   font-size: 80%;
@@ -28,8 +32,19 @@ body {
   padding: 50px 0px 0px 0px;
   z-index: 0; }
 
-.navbar-inverse {
-  background-color: #512DA8; }
+
+
+ .img-logo{
+   width: 180px;
+   height: auto;
+
+ } 
+
+ .container-img{
+  height: 190px;
+
+ }
+
 
 .tab-content {
   border-left: 1px solid #ddd;
@@ -37,30 +52,18 @@ body {
   border-bottom: 1px solid #ddd;
   padding: 10px; }
 
-.carousel {
-  background: #512DA8; }
-  .carousel .carousel-item {
-    height: 300px; }
-    .carousel .carousel-item img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-height: 300px; }
-
-#carousel-button {
-  right: 0px;
-  position: absolute;
-  bottom: 0px; }
 
 .modal .modal-header {
-  background: #512DA8; }
+  background: #BDBDBD; }
   .modal .modal-header .modal-title {
     color: #ddd; }
   .modal .modal-header .close {
     color: floralwhite; }
 
 .modal .modal-body {
-  background: #D1C4E9; }
+  background: white; }
 
-.modal .modal-footer {
-  background: #9575CD; }
+.scroll {
+  height:118px;
+  overflow-y: scroll;
+}
